@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Registro Sistema Apoyo Seguimiento Medico 0.1</title>
 </head>
+
 <body>
     <div class="container-fluid" id=”principal”>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
@@ -26,31 +28,47 @@
                         <li class="nav-item"><a class="nav-link" href="#bondades">Bondades del sistema</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Noticias">Noticias Salud</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Usuarios</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="ingreso.html">Iniciar Sesion</a></li>
-                              <li><a class="dropdown-item" href="registro.html">Registro</a></li>
+                                <li><a class="dropdown-item" href="ingreso.html">Iniciar Sesion</a></li>
+                                <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                             </ul>
-                          </li>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!--Formulario de registro de usuario-->
         <div class="container" id="formulario">
             <form id="tomadatos">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="usuario">
-                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
+                    <!--Nombre-->
+                    <label for="usuario" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                    <!--Apellido-->
+                    <label for="apellido" class="form-label">Apellido</label>
                     <input type="text" class="form-control" id="apellido">
-                    <label for="exampleInputEmail1" class="form-label">RUT</label>
-                    <input type="text" class="form-control" id="apellido">
+                    <!--rut-->
+                    <label for="rut" class="form-label">RUT</label>
+                    <input type="text" class="form-control" id="rut">
+                    <!--previsión-->
+                    <form>
+                        <label for="prevision" class="form-label">Elija su previsión de salud</label>
+                        <select class="form-select" id="prevision" aria-label="Default select example">
+                            <option value="1">Fonasa</option>
+                            <option value="2">Isapre</option>
+                            <option value="3">Particular</option>
+                        </select>
+                    </form>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Clave</label>
+                    <label for="clave" class="form-label">Clave</label>
                     <input type="password" class="form-control" id="clave">
                 </div>
-                <button type="button" class="btn btn-outline-info" id="ContinuarRegistro" onClick="ingreso()">Registrar Usuario</button>
+                <button type="button" class="btn btn-outline-info" id="ContinuarRegistro" onClick="registro()">Registrar
+                    Usuario</button>
             </form>
         </div>
     </div>

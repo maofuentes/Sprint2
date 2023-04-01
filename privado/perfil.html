@@ -1,178 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Registro Sistema Apoyo Seguimiento Medico 0.1</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <title>Registro Sistema Apoyo Seguimiento Medico 0.1</title>
 </head>
+
 <body>
-    <div class="container-fluid" id=”principal”>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
-            <div class="container-fluid">
-                <a class="navbar-brand"><img src="https://cdn.pixabay.com/photo/2017/02/15/20/58/ekg-2069872_1280.png"
-                        alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
-                <a class="navbar-brand">Apoyo Seguimiento Medico</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#bondades">Bondades del sistema</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Noticias">Noticias Salud</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="ingreso.html">Perfil</a></li>
-                              <li><a class="dropdown-item" href="registro.html">Configuracion</a></li>
-                            </ul>
-                          </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container" id="pacientes-main">
-            <div class="row align-items-start">
-                <div class="col">
-                  <h1>Perfil de Paciente:</h1>
-                  <img src="https://images.pexels.com/photos/2586823/pexels-photo-2586823.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width=50%>
-                </div>
-                <div class="col">
-                    <div class="card" id="titulo-principal4">
-                        <div class="card-body">
-                          <h3 class="card-title">Datos:</h3>
-                          <ul>
-                            <li>
-                              <p class="card-text">José Pedro Balmaceda Pascal</p>
-                            </li>
-                            <li>
-                                <p class="card-text">31 Febrero de 1963</p>
-                            </li>
-                            <li>
-                                <p class="card-text">60 Años</p>
-                            </li>
-                            <li>
-                                <p class="card-text">Calle Larga sin Numero, Viña del Mar</p>
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" id="titulo-principal4">
-                        <div class="card-body">
-                          <h3 class="card-title">Examenes Disponibles:</h3>
-                          <ul>
-                            <li>
-                              <p class="card-text" style="color: green;">Hemograma</p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: green;">Perfil lipídico</p>
-                            </li>
-                            <li>
-                                <p class="card-text" style="color: red;">Colesterol</p>
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" id="titulo-principal4">
-                        <div class="card-body">
-                          <h3 class="card-title">Enfermedades Base:</h3>
-                          <ul>
-                            <li>
-                              <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Asma</button></p>
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Asma</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      
-                                      <ul>
-                                        <li>
-                                            Declarada: 20-03-2015
-                                        </li>
-                                        <li>
-                                            Ultimo Control: 31-03-2021
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li>
-                                <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Obesidad</button></p>
-                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Obesidad</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        
-                                        <ul>
-                                          <li>
-                                              Declarada: 20-08-2015
-                                          </li>
-                                          <li>
-                                              Ultimo Control: 31-03-2021
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Hipertension</button></p>
-                                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Hipertension</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        
-                                        <ul>
-                                          <li>
-                                              Declarada: 20-06-2015
-                                          </li>
-                                          <li>
-                                              Ultimo Control: 31-03-2021
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="row align-items-start">
-                <iframe src="https://calendar.google.com/calendar/embed?src=en.cl%23holiday%40group.v.calendar.google.com&ctz=America%2FSantiago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
+  <div class="container-fluid" id=”principal”>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="https://cdn.pixabay.com/photo/2017/02/15/20/58/ekg-2069872_1280.png"
+            alt="Logo" width="50" height="50" class="d-inline-block align-text-top"></a>
+        <a class="navbar-brand">Apoyo Seguimiento Medico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html">Volver a Portal</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <div class="container" id="pacientes-main">
+      <div class="row align-items-start">
+        <div class="col">
+          <h1>Perfil de Paciente:</h1>
+          <img src="https://images.pexels.com/photos/2586823/pexels-photo-2586823.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="" width=50%>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Datos:</h3>
+              <ul>
+                <li>
+                  <p class="card-text">José Pedro Balmaceda Pascal</p>
+                </li>
+                <li>
+                  <p class="card-text">31 Febrero de 1963</p>
+                </li>
+                <li>
+                  <p class="card-text">60 Años</p>
+                </li>
+                <li>
+                  <p class="card-text">Calle Larga sin Numero, Viña del Mar</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Examenes Disponibles:</h3>
+              <ul>
+                <li>
+                  <p class="card-text" style="color: green;">Hemograma</p>
+                </li>
+                <li>
+                  <p class="card-text" style="color: green;">Perfil lipídico</p>
+                </li>
+                <li>
+                  <p class="card-text" style="color: red;">Colesterol</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body" id="tarjeta_enfermedad">
+              <h3 class="card-title">Enfermedades Base:</h3>
+              <ul>
+                <li>
+                  <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">Asma</button></p>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Asma</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                          <ul>
+                            <li>
+                              Declarada: 20-03-2015
+                            </li>
+                            <li>
+                              Ultimo Control: 31-03-2021
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal2">Obesidad</button></p>
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Obesidad</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                          <ul>
+                            <li>
+                              Declarada: 20-08-2015
+                            </li>
+                            <li>
+                              Ultimo Control: 31-03-2021
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal3">Hipertension</button></p>
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Hipertension</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                          <ul>
+                            <li>
+                              Declarada: 20-06-2015
+                            </li>
+                            <li>
+                              Ultimo Control: 31-03-2021
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=en.cl%23holiday%40group.v.calendar.google.com&ctz=America%2FSantiago"
+          style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="privado.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="privado.js"></script>
 </body>
+
 </html>

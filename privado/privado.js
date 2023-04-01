@@ -3,13 +3,6 @@ const ctx2 = document.getElementById('myChart2');
 const ctx3 = document.getElementById('myChart3');
 const ctx4 = document.getElementById('myChart4');
 
-$( function() {
-  $( "#campofecha" ).datepicker({
-    numberOfMonths: 2,
-    showButtonPanel: true
-  });
-} );
-
 new Chart(ctx, {
   type: 'bar',
   data: {
