@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Registro Sistema Apoyo Seguimiento Medico 0.1</title>
 </head>
 <body>
@@ -29,17 +29,18 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="ingreso.html">Perfil</a></li>
-                              <li><a class="dropdown-item" href="registro.html">Registro</a></li>
+                              <li><a class="dropdown-item" href="registro.html">Configuracion</a></li>
                             </ul>
                           </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container text-center">
+        <div class="container" id="pacientes-main">
             <div class="row align-items-start">
                 <div class="col">
                   <h1>Perfil de Paciente:</h1>
+                  <img src="https://images.pexels.com/photos/2586823/pexels-photo-2586823.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width=50%>
                 </div>
                 <div class="col">
                     <div class="card" id="titulo-principal4">
@@ -86,14 +87,77 @@
                           <h3 class="card-title">Enfermedades Base:</h3>
                           <ul>
                             <li>
-                              <p class="card-text">Asma</p>
+                              <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Asma</button></p>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Asma</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      
+                                      <ul>
+                                        <li>
+                                            Declarada: 20-03-2015
+                                        </li>
+                                        <li>
+                                            Ultimo Control: 31-03-2021
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </li>
                             <li>
-                                <p class="card-text">Obesidad</p>
-                            </li>
-                            <li>
-                                <p class="card-text">Hipertension</p>
-                            </li>
+                                <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Obesidad</button></p>
+                                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Obesidad</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        
+                                        <ul>
+                                          <li>
+                                              Declarada: 20-08-2015
+                                          </li>
+                                          <li>
+                                              Ultimo Control: 31-03-2021
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <p class="card-text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Hipertension</button></p>
+                                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Hipertension</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        
+                                        <ul>
+                                          <li>
+                                              Declarada: 20-06-2015
+                                          </li>
+                                          <li>
+                                              Ultimo Control: 31-03-2021
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
                           </ul>
                         </div>
                     </div>
